@@ -27,10 +27,13 @@
     --weight-regular: 400;
     /* size */
     --size-border-radius: 4px;
-
+    /* Animation */
+    --animation-duration:300ms;
 }
 
-/*Universal tags */
+   
+
+    /*Universal tags */
 
 * {
     box-sizing: border-box;
@@ -105,14 +108,34 @@ p {
     padding: 8px 12px;
     margin: 0;
     border-radius: var(--size-border-radius);
-
 }
+
 .navbar__menu__item.active {
     border: 1px solid var(--color-white);
 }
 .navbar__menu__item:hover {
     background-color: var(--color-dark-pink);
     border-radius: var(--size-border-radius);
+  }
+
+/* HOME */
+#home {
+    background: url("img/home-background.png") center/cover no-repeat;
+    padding: 40px;
+    text-align: center;
+}
+.home__avartar {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid var(--color-light-white);
+
+}
+.home__tilte, 
+.home__description {
+    color: var(--color-white);
+}
+.home__contact {
     font-size: var(--font-regular);
     font-weight: var(--weight-bold);
     margin: 24px;
@@ -121,4 +144,68 @@ p {
     border-radius: 4px;
     color: var(--color-white);
 
+}
+/* Section common */
+.section {
+    padding: 50px;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* About */
+.about__major {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+
+}
+
+.major__icon {
+    width: 170px;
+    height: 170px;
+    line-height: 170px;
+    font-size: 70px;
+   
+    color: var(--color-blue);
+    margin:auto;
+    border: 1px solid var(--color-blue);
+    border-radius: 50%;
+    margin-bottom: 16px;
+
+    
+}
+.major__icon i {
+    transition: all var(--animation-duration) ease;
+}
+
+.major__icon:hover  i {
+    color: var(--color-pink);
+    transform: rotate(-30deg) scale(1.1);
+}
+.major__tiltle, .major__description {
+    color: var(--color-dark-grey);
+}
+.major__description {
+    font-size: var(--font-small);
+}
+
+.job {
+    display: flex;
+    align-items: center;
+}
+.job__discription {
+    margin: 0 16px;
+    text-align: left;
+
+}
+.job__name,
+.job__period {
+    color: var(--color-light-grey);
+}
+.job__name {
+    font-size: var(--font-small);
+}
+.job__period {
+    font-size: var(--font-micro);
 }
