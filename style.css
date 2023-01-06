@@ -50,6 +50,13 @@ ul {
     list-style: none;
     padding-left: 0;
 }
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
 /* Typogrphy */
 h1 {
     font-weight: var(--font-large);
@@ -105,4 +112,13 @@ p {
 }
 .navbar__menu__item:hover {
     background-color: var(--color-dark-pink);
-   
+    border-radius: var(--size-border-radius);
+    font-size: var(--font-regular);
+    font-weight: var(--weight-bold);
+    margin: 24px;
+    padding: 8px 12px;
+    border:2px solid white ;
+    border-radius: 4px;
+    color: var(--color-white);
+
+}
