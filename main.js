@@ -22,6 +22,13 @@ navbarMenu.addEventListener('click', (event) => {
   scrollIntoView(link);
 });
 
+// Navbar toggle button for small screen 알려주셨나?
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
+});
+
+
 //handle click on ''contact me' button on home
 const homeContactBtn = document.querySelector('.home__contact');
 homeContactBtn.addEventListener('click', () => {
