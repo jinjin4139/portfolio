@@ -92,40 +92,43 @@ p {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: transparent;
     align-items: center;
     padding: 16px;
+    background-color: transparent;
     transition: all var(--animation-duration) ease-in-out;
-}
-#navbar.navbar--derk {
-    background-color: var(--color-pink);
+    z-index: 1;
+  }
+#navbar.navbar--dark {
+    background-color: var(--color-blue);
+    padding: 8px;
 }
 
-.navbar__menu {
-    display: flex;
-
-}
 .navbar__logo {
     font-size:var(--font-medium) ;
     font-weight: var(--weight-semi-bold);
     color: var(--color-white);
 
 }
+.navbar__menu {
+    display: flex;
+}
+
 .navbar__menu__item {
     padding: 8px 12px;
-    margin: 0;
-    border-radius: var(--size-border-radius);
+    margin: 0 4px;
     color: var(--color-white);
-
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: var(--size-border-radius);
 }
 
-.navbar__menu__item.active {
-    border: 1px solid var(--color-white);
-}
 .navbar__menu__item:hover {
     background-color: var(--color-dark-pink);
-    border-radius: var(--size-border-radius);
-  }
+    border-color: var(--color-white);
+}
+
+
+
 .navbar__toggle-btn {
     position: absolute;
     top: 24px;
