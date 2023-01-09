@@ -29,6 +29,24 @@ homeContactBtn.addEventListener('click', () => {
 
 })
 
+//스크롤링이 내려가면 투명하게 변하기 make home slowly fade to transparent as the window scrolls down
+const home = document.querySelector('.home__container');
+const homeheight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', ()=> {
+  home.style.opacity = 1 - window.scrollY / homeheight
+})
+
+
+
+
+
+
+
+
+
+
+
+
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({behavior: 'smooth'});
