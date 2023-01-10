@@ -25,7 +25,7 @@ navbarMenu.addEventListener('click', (event) => {
 
 });
 
-// Navbar toggle button for small screen 알려주셨나?
+// Navbar toggle button for small screen 
 const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
 navbarToggleBtn.addEventListener('click', () => {
   navbarMenu.classList.toggle('open');
@@ -101,6 +101,7 @@ workBtnContainer.addEventListener('click', (e) =>{
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({behavior: 'smooth'});
+  selectNavItem(navItems[sectionIds.indexOf(selector)]);
 }
 
 // 1. 모든 섹션 요소들과 메뉴아이템들을 가지고 온다

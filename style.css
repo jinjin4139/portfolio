@@ -123,7 +123,9 @@ p {
     border: 1px soild transparent;
     border-radius: var(--size-border-radius);
 }
-
+.navbar__menu__item.active {
+    border: 1px solid var(--color-white);
+  }
 
 .navbar__menu__item:hover {
     border-color: var(--color-white);
@@ -388,7 +390,7 @@ p {
     left: 50%;
     width: 50px;
     height: 2px;
-   transform: translateX(-50%);
+   transform: translateX();
     margin-top: 8px;
     background-color: var(--color-dark-white);
 }
